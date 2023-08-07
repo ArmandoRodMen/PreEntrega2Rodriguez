@@ -21,19 +21,21 @@ const Item = ({ title, stock, price, text, img, alt }) => {
                     {product && (
                     <div className="card">
                         <figure className="image is-square">
-                        <img src={img} alt={product.alt} />
+                            <img src={img} alt={product.alt} />
                         </figure>
-                        <div className="media-content">
-                        <h2>Titulo: {product.title}</h2>
-                        <h2>$ {product.price}</h2>
-                        <h2>{text}</h2>
-                        <Link to={`/products/${product.id}`}>Mas Info</Link>
+                        <div class="card-content">
+                            <div class="content">
+                            <h2 className="title is-4" >Titulo: {product.title}</h2>
+                            <h2 className="subtitle is-4">$ {product.price}</h2>
+                            <h2 className="subtitle is-5">{text}</h2>
+                            <Link to={`/products/${product.id}`} className="subtitle is-6">Más Info</Link>
+                            <ItemCount
+                            initial={1}
+                            stock={stock}
+                            onAdd={(quantity) => console.log('Cantidad agregada ', quantity)}
+                            />
+                            </div>
                         </div>
-                        <ItemCount
-                        initial={1}
-                        stock={stock}
-                        onAdd={(quantity) => console.log('Cantidad agregada ', quantity)}
-                        />
                     </div>
                     )}
                 </div>

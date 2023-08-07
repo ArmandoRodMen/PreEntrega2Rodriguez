@@ -22,8 +22,8 @@ const ItemListContainer = ({greeting}) => {
     return(
         <div>
             <section className="section is-medium">
-                <h1 className="title">Cyberprecios</h1>
-                <h2 className="subtitle">
+                <h1 className="title is-1">Cyberprecios</h1>
+                <h2 className="subtitle is-3">
                     {greeting} a los mejores precios de la web!
                 </h2>
                 <ItemList products={products}/>

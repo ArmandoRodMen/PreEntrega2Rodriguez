@@ -5,7 +5,7 @@ import Error from "./components/pages/Error";
 import HoldOn from "./components/pages/HoldOn";
 import Product from "./components/pages/Product";
 import Products from "./components/pages/Products";
-import "./components/css/App.css"
+import "./css/App.css"
 
 //Importar librería de estilos
 import "bulma/css/bulma.css";

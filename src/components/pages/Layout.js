@@ -9,7 +9,8 @@ function Layout(){
             <NavBar/>
             <Outlet/>
             <footer class="section is-small">
-                <img src={Logo} alt="Logo"/>
+                <img src={Logo}  width="10%" alt="Logo"/>
+                <p>Recuerda seguirnos en nuestras redes sociales</p>
             </footer>
         </div>
     )

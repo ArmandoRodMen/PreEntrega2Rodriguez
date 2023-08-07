@@ -15,20 +15,22 @@ function Product() {
     }, [productId]);
 
     if (!product) {
-        return <div>Loading...</div>;
+        return <div class="section is-large">Loading...</div>;
     }
 
     const { id, title, stock, price, img, alt, text, detail } = product;
 
     return (
-        <div>
-        <img src={img} alt={alt} />
-        <h2>{title}</h2>
-        <h2>{id}</h2>
-        <h2>{text}</h2>
-        <h2>{detail}</h2>
-        <h2>{stock}</h2>
-        <h2>{price}</h2>
+        <div class="box">
+            <div class="block">
+            <img src={img} alt={alt} />
+            <h2 class="title is-1">{title}</h2>
+            <h2 class="subtitle is-6">{id}</h2>
+            <h2 class="subtitle is-2">{text}</h2>
+            <h2>{detail}</h2>
+            <h2>{stock}</h2>
+            <h2>{price}</h2>
+            </div>
         </div>
     );
 }

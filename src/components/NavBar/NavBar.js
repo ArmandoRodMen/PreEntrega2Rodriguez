@@ -5,7 +5,8 @@ import Logo from "./media/logo.svg";
 
 function NavBar(){
     return(
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="section is medium">
+                    <nav class="navbar" role="navigation" aria-label="main navigation">
             <a class="navbar-item">
                 <Link to="/"><img src={Logo} width="112" height="28" alt="Logo"/></Link>
             </a>
@@ -25,6 +26,7 @@ function NavBar(){
                 </div>
             </div>
         </nav>
+        </div>
     )
 
 }

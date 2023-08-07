@@ -7,7 +7,7 @@ function Layout(){
         <div>          
             <NavBar/>
             <Outlet/>
-            <footer>Pie de página</footer>
+            <footer class="section is-medium">Pie de página</footer>
         </div>
     )
 }

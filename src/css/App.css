@@ -81,3 +81,8 @@ p {
 footer{
     background-color: red;
 }
+
+img{
+    display: flex;
+    align-items: center;
+}

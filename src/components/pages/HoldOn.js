@@ -1,7 +1,7 @@
 function HoldOn(){
     return(
-        <div>
-            <h2>Stay tuned!</h2>
+        <div class="section is-large">
+            <h2 class="title">Stay tuned!</h2>
         </div>
     )
 }

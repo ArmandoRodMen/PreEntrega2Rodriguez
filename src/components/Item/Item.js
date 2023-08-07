@@ -29,11 +29,13 @@ const Item = ({ title, stock, price, text, img, alt }) => {
                             <h2 className="subtitle is-4">$ {product.price}</h2>
                             <h2 className="subtitle is-5">{text}</h2>
                             <Link to={`/products/${product.id}`} className="subtitle is-6">Más Info</Link>
-                            <ItemCount
-                            initial={1}
-                            stock={stock}
-                            onAdd={(quantity) => console.log('Cantidad agregada ', quantity)}
-                            />
+                            <div class="box">
+                                <ItemCount
+                                initial={1}
+                                stock={stock}
+                                onAdd={(quantity) => console.log('Cantidad agregada ', quantity)}
+                                />
+                            </div>
                             </div>
                         </div>
                     </div>

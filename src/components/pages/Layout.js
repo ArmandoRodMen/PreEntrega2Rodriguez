@@ -1,5 +1,6 @@
 import {Outlet}  from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
+import Logo from "../NavBar/media/logo.svg";
 
 function Layout(){
 
@@ -7,7 +8,9 @@ function Layout(){
         <div>          
             <NavBar/>
             <Outlet/>
-            <footer class="section is-medium">Pie de página</footer>
+            <footer class="section is-small">
+                <img src={Logo} alt="Logo"/>
+            </footer>
         </div>
     )
 }

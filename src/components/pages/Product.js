@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProducts } from '../../asyncMock';
@@ -30,6 +31,7 @@ function Product() {
             <h2 class="subtitle is-6">{detail}</h2>
             <h2 class="subtitle is-5">¡Contamos con {stock} unidades!</h2>
             <h2 class="subtitle is-1">Desde: $ {price}</h2>
+            <button class="button is-rounded"><Link to="/products">Volver</Link></button>
             </div>
         </div>
     );

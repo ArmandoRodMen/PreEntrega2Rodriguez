@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@400;500;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+/*Altura y acomodo barra de navegación*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    resize: both;
+}
+
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 2.3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/*Diseño h2*/
+h2 {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/*Diseño h3*/
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/*Diseño h4*/
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 95%;
+}
+
+/*Diseño h5*/
+h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    text-align: right;
+    color: black;
+    width: 95%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/*Diseño p*/
+p {
+    font-family: "Roboto", sans-serif;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: justify;
+    color: black;
+    width: 90%;
+}
+
+footer{
+    background-color: red;
+}

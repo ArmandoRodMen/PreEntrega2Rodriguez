@@ -23,13 +23,13 @@ function Product() {
     return (
         <div class="box">
             <div class="block">
-            <img src={img} alt={alt} />
+            <img src={img} alt={alt}/>
             <h2 class="title is-1">{title}</h2>
-            <h2 class="subtitle is-6">{id}</h2>
+            <h2 class="subtitle is-7">SKU: {id}</h2>
             <h2 class="subtitle is-2">{text}</h2>
-            <h2>{detail}</h2>
-            <h2>{stock}</h2>
-            <h2>{price}</h2>
+            <h2 class="subtitle is-6">{detail}</h2>
+            <h2 class="subtitle is-5">¡Contamos con {stock} unidades!</h2>
+            <h2 class="subtitle is-1">Desde: $ {price}</h2>
             </div>
         </div>
     );

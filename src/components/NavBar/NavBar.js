@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom"
-import CarWidget from "../CarWidget/CarWidget";
-import Logo from "./media/logo.svg";
+/*
+    Armando Rodriguez
+    PreEntrega2
+*/
+
+import { Link } from "react-router-dom" //Importar componente de react para linkear y navegar
+import CarWidget from "../CarWidget/CarWidget"; //Importar componente de carrito de compras
+import logo from "./media/logo.svg"; //Importar logo vector
 
 
 function NavBar(){
-    return(
+    return( //Regresar elementos para una barra de navegación
         <div>
             <nav class="navbar is-info" role="navigation" aria-label="main navigation">
             <a class="navbar-item">
-                <Link to="/"><img src={Logo} width="112" height="28" alt="Logo"/></Link>
+                <Link to="/"><img src={logo} width="112" height="28" alt="Logo"/></Link>
             </a>
             <div class="navbar-menu">
                 <div class="navbar-start">
@@ -31,4 +36,8 @@ function NavBar(){
 
 }
 
-export default NavBar;
+export default NavBar; //Exportar componente
+
+/*
+    Fin de código
+*/

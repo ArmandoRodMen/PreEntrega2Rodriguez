@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import ItemCount from '../ItemCount/ItemCount';
-import { getProducts } from '../../asyncMock';
+import React, { useState, useEffect } from 'react'; //Importar módulos de estados y uso de estados de rect
+import { Link } from 'react-router-dom';  //Importar componente de react para linkear y navegar
+import { getProducts } from '../../asyncMock'; //Importar la función que es una promesa, del arreglo
+import ItemCount from '../ItemCount/ItemCount'; //Importar componente ItemCount
 
-const Item = ({ title, stock, price, text, img, alt }) => {
-    const [product, setProduct] = useState(null);
+const Item = ({ title, stock, price, text, img, alt }) => { //Componente Item que acpeta esas propiedades
+    const [product, setProduct] = useState(null); //Declarar como nulo, inicialmente, al estado local product usando el hook useState
 
-    useEffect(() => {
-        getProducts().then((data) => {
-        const matchedProduct = data.find((product) => product.title === title);
-        setProduct(matchedProduct);
+    useEffect(() => { //Usar useEffect para cargar detalles de producto
+        getProducts().then((data) => { //Llamar a getProuct 
+            const matchedProduct = data.find((product) => product.title === title); //Buscar producto que coincida con el titulo
+            setProduct(matchedProduct); //Actualizar el estado product con el producto encontrado
         });
-    }, [title]);
+    }, [title]); // Se actualiza con el [title]
 
-    return (
+    return ( //Regresar elementos para una carta de un producto
         <div className="container">
             <div className="section">
                 <div className="columns">
@@ -47,4 +47,4 @@ const Item = ({ title, stock, price, text, img, alt }) => {
     );
 };
 
-export default Item;
+export default Item; //Exportar componente

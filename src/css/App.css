@@ -1,11 +1,20 @@
+/*
+    Armando Rodriguez
+    PreEntrega2
+*/
+
+/*Importar tipografía*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@400;500;900&display=swap");
 
+
+/*Reset*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/*Altura del html*/
 html {
     height: 100%;
 }
@@ -19,7 +28,7 @@ nav {
     resize: both;
 }
 
-
+/*Diseño h1*/
 h1 {
     font-family: "Roboto", sans-serif;
     text-align: center;
@@ -78,11 +87,18 @@ p {
     width: 90%;
 }
 
+/*Diseño pie de página*/
 footer{
     background-color: #408cd4;
 }
 
+
+/*Diesño imagen*/
 img{
     display: flex;
     align-items: center;
 }
+
+/*
+    Fin de código
+*/

@@ -1,5 +1,9 @@
+/*
+    Armando Rodriguez
+    PreEntrega2
+*/
 
-//Arreglo productos JSON parse
+//Arreglo productos JSON parse, cada elemento del arreglo contiene propiedades: id, texto, stock, precio, titulo, detalle, imagen y descripción de imagen
 const products = [
     {
         "id": 123456,
@@ -34,11 +38,20 @@ const products = [
 
 ]
 
-export const getProducts = () => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(products)
-        }, 500)
+export const getProducts = () => { //Exportar función getProducts
+    return new Promise((resolve, reject) => { //Crear y regresar una promesa
+        setTimeout(() => { //Simular retraso de tiempo
+            const success = true; // Cambiar a falso si hay situación de error
+            if (success){ //Si es caso de éxito
+                resolve(products) //Pasado el tiempo, se resuelve pasando el valor products, que es el arreglo
+            }else{ //Si no es caso ded éxito
+                reject(new Error("No se pudieron obtener los productos.")); //Regresar un error
+            }
+            
+        }, 500) //Tiempo de resolución de 500 millisegundos
     })
 };
 
+/*
+    Fin de código
+*/

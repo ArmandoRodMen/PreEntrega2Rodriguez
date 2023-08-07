@@ -1,5 +1,6 @@
 /*
-PreEntrega1Rodriguez
+    Armando Rodriguez
+    PreEntrega2
 */
 
 import React from "react"; //La libreria define que es un componente y como funcionan juntos los componentes
@@ -13,3 +14,7 @@ const el = document.getElementById("root");//Declaración de raíz
 const root = ReactDOM.createRoot(el);//Sobreescritura de raíz
 
 root.render(<App/>) //Render de app
+
+/*
+    Fin de código
+*/

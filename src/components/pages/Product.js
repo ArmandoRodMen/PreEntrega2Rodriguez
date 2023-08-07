@@ -1,10 +1,16 @@
-import { Link } from "react-router-dom"
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { getProducts } from '../../asyncMock';
+/*
+    Armando Rodriguez
+    PreEntrega2
+*/
+
+import { Link } from "react-router-dom" //Importar componente de react para linkear y navegar
+import React, { useState, useEffect } from 'react'; //Importar estados y uso de estados de rect
+import { useParams } from 'react-router-dom'; //Importar parametros de usuario de react
+import { getProducts } from '../../asyncMock'; //Importar la función que es una promesa, del arreglo
 
 
 function Product() {
+
     const { productId } = useParams();
     const [product, setProduct] = useState(null);
 
@@ -16,7 +22,14 @@ function Product() {
     }, [productId]);
 
     if (!product) {
-        return <div class="section is-large">Loading...</div>;
+        return(
+            <div>
+                <div class="section is-large">
+                    <h2 class="title is-2">Cargando...</h2>
+                    <button class="button is-rounded"><Link to="/products">Volver</Link></button>
+                </div>;
+            </div>
+        )
     }
 
     const { id, title, stock, price, img, alt, text, detail } = product;
@@ -31,10 +44,14 @@ function Product() {
             <h2 class="subtitle is-6">{detail}</h2>
             <h2 class="subtitle is-5">¡Contamos con {stock} unidades!</h2>
             <h2 class="subtitle is-1">Desde: $ {price}</h2>
-            <button class="button is-rounded"><Link to="/products">Volver</Link></button>
-            </div>
+            <button class="button is-rounded"><Link to="/products">Volver</Link></button> 
+            </div> 
         </div>
     );
 }
 
-export default Product;
+export default Product; //Exportar componente
+
+/*
+    Fin de código
+*/

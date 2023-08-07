@@ -1,8 +1,12 @@
+/*
+    Armando Rodriguez
+    PreEntrega2
+*/
 
-import CartIcon from "./media/shoppingCart.svg";
+import CartIcon from "./media/shoppingCart.svg"; //Importar carrito icono vector
 
 const CarWidget=()=>{
-    return(
+    return( //Regresar elementos del icono de carrito con un hardcodding de númeor de elementos en él
         <div>
             <span className="button  is-medium is-link">
                 <img src={CartIcon} width="30" alt="Icono Carrito"/>
@@ -12,4 +16,8 @@ const CarWidget=()=>{
     )
 }
 
-export default CarWidget;
+export default CarWidget; //Exportar componente
+
+/*
+    Fin de código
+*/

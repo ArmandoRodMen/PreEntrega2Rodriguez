@@ -1,25 +1,27 @@
 /*
-PreEntrega1Rodriguez
+    Armando Rodriguez
+    PreEntrega2
 */
-import { useState, useEffect } from "react";
-import {getProducts} from "../../asyncMock";
-import ItemList from "../ItemList/ItemList";
 
-const ItemListContainer = ({greeting}) => {
+import { useState, useEffect } from "react"; //Importar estados y uso de estados de rect
+import {getProducts} from "../../asyncMock"; //Importar la función que es una promesa, del arreglo
+import ItemList from "../ItemList/ItemList"; //Importar componente lista de items
+
+const ItemListContainer = ({greeting}) => { //La función constante recibe una propiedad saludo 
 
     const [products, setProducts] = useState([])
 
     useEffect(()=>{
-        getProducts()
+        getProducts() //Consumo asincrónico
             .then(response =>{
-                setProducts(response)
+                setProducts(response) //Caso exista respuesta
             })
             .catch(error =>{
-                console.log(error)
+                console.log(error) //Caso sea error
             })
     }, [])
 
-    return(
+    return( //Regresar una sección con un saludo , propiedad, importado y un acomodo de los productos por componente ItemList 
         <div>
             <section class="hero">
                 <div class="hero-body">
@@ -34,4 +36,8 @@ const ItemListContainer = ({greeting}) => {
     )
 }
 
-export default ItemListContainer;   
+export default ItemListContainer; //Exportar componente  
+
+/*
+    Fin de código
+*/
